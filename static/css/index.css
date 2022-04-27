@@ -1,0 +1,326 @@
+@font-face {
+	font-family: 'FranklinGothicMedium';
+	src: url('../static/fonts/framd.eot');
+	src: local('☺'), url('../static/fonts/framd.woff') format('woff'),
+    url('../static/fonts/framd.ttf') format('truetype'), url('../static/fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #000000;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.name_logo{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 1px;
+    float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+    font-family: 'FraknlinGothicMedium', sans-serif;
+    text-align: center;
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu{
+    float: left;
+}
+
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 15px;
+    font-family: 'FraknlinGothicMedium', sans-serif;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.8s ease forwards;
+    -o-animation: topshift 0.8s ease forwards;
+    animation: topshift 0.8s ease forwards;
+    opacity: 0;
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+@keyframes title_move{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+.menu li a{
+    transition: all 0.3s;
+    color: #ffffff;
+    display: inline-block;
+    transform: scale(1);
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #ffa600;
+    transform: scale(1.1)
+}
+
+.menu li a:active{
+    transform: scale(0.9);
+}
+
+.first_page_main{
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.jpg") 100%/100% auto no-repeat local;
+    filter: brightness(80%);
+}
+
+@media (max-width: 991px){
+    .first_page_main{
+        width: 100%;
+        height: 100%;
+        background: url("../img/teacher_photo_first_page.JPG") right/100% auto no-repeat local, url("../img/bg.jpg") center/cover no-repeat local;
+    }
+}
+
+.title_container{
+    float: left;
+    padding-right: 15%;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: title_move 1s forwards ease;
+    -o-animation: title_move 1s forwards ease;
+    animation: title_move 1s forwards ease;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    filter: brightness(100%);
+}
+
+.title_container h1{
+    font-size: 60px;
+    font-family: 'FraknlinGothicMedium', sans-serif;
+}
+
+.title_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 15px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title_container input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title_container input:active{
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px){
+    .title_container, .title_container input, .title_container h4{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+        padding-left: 5%;
+    }
+
+    .main{
+        position: relative;
+    }
+
+    .main::after{
+        content: "";
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    .title_container input{
+        border: 2px solid #fff;
+    }
+
+    .title_container h1{
+        font-size: 40px;
+    }
+}
+
+.second_page_main p{
+    font-size: 20px;
+    font-family: 'FraknlinGothicMedium', sans-serif;
+    color: #ffffff;
+}
+
+.LINK p{
+    color: #000;
+}
+
+.coins1_urls{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    column-gap: 200px;
+}
+
+.coins2_urls{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    column-gap: 200px;
+}
+
+.coins3_urls{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    column-gap: 200px;
+}
+
+.BTC{
+    background-color: orange;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+}
+
+.ETH{
+    background-color: rgb(15, 129, 223);
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+}
+
+.ADA{
+    background-color: rgb(25, 37, 211);
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+}
+
+.SOL{
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+}
+
+.MATIC{
+    background-color: rgb(183, 0, 255);
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+}
+
+.LINK{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 10px solid #000000;
+    border-radius: 20px;
+}
+
+.second_page_main input:hover{
+    transition: all 0.3s;
+    transform: scale(1.1)
+}
+
+.second_page_main{
+    background: #EBEBEB;
+}
+
+.second_page_main input{
+    margin-top: 45px;
+}
+
+
+
+
+
+
+
