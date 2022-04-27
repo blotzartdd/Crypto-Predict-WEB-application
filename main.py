@@ -26,7 +26,7 @@ def index():
 
 @app.route('/btc')
 def btc():
-    # btc_model = ModelProcessor('BTC', 'BTC_model')
+    # btc_model = ModelProcessor('BTC', 'BTC_model')  Canvas Api
     # plot_url = btc_model.build_plot()
     # return f'<img src="data:image/png;base64, {plot_url}">'
     return render_template('BTC.html')
@@ -34,7 +34,7 @@ def btc():
 
 @app.route('/eth')
 def eth():
-    # btc_model = ModelProcessor('ETH', 'ETH_model')
+    # btc_model = ModelProcessor('ETH', 'ETH_model')  Canvas Api
     # plot_url = btc_model.build_plot()
     # return f'<img src="data:image/png;base64, {plot_url}">'
     return render_template('ETH.html')
@@ -42,7 +42,7 @@ def eth():
 
 @app.route('/ada')
 def ada():
-    # btc_model = ModelProcessor('ADA', 'ADA_model')
+    # btc_model = ModelProcessor('ADA', 'ADA_model')  Canvas Api
     # plot_url = btc_model.build_plot()
     # return f'<img src="data:image/png;base64, {plot_url}">'
     return render_template('ADA.html')
@@ -50,7 +50,7 @@ def ada():
 
 @app.route('/sol')
 def sol():
-    # btc_model = ModelProcessor('SOL', 'SOL_model')
+    # btc_model = ModelProcessor('SOL', 'SOL_model')  Canvas Api
     # plot_url = btc_model.build_plot()
     # return f'<img src="data:image/png;base64, {plot_url}">'
     return render_template('SOL.html')
@@ -58,7 +58,7 @@ def sol():
 
 @app.route('/matic')
 def matic():
-    # btc_model = ModelProcessor('MATIC', 'MATIC_model')
+    # btc_model = ModelProcessor('MATIC', 'MATIC_model')  Canvas Api
     # plot_url = btc_model.build_plot()
     # return f'<img src="data:image/png;base64, {plot_url}">'
     return render_template('MATIC.html')
@@ -66,7 +66,7 @@ def matic():
 
 @app.route('/link')  # ChainLink Crypto
 def link():
-    # btc_model = ModelProcessor('LINK', 'LINK_model')
+    # btc_model = ModelProcessor('LINK', 'LINK_model')  Canvas Api
     # plot_url = btc_model.build_plot()
     # return f'<img src="data:image/png;base64, {plot_url}">'
     return render_template('LINK.html')
